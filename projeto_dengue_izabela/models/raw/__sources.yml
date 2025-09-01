@@ -1,0 +1,26 @@
+version: 2
+
+# Try using these source definitions instead!
+sources:
+  - name: projeto_dengue_izabela
+    database: meicansoft-prd
+    schema: projeto_dengue_izabela
+    tables:
+      - name: raw__casos
+        external:
+          location: "gs://meicansoft-datalake/raw/projdengue__sinan_dengue/tb_dengue.csv"
+          options:
+            format: CSV
+            skip_leading_rows: 1
+            field_delimiter: ","
+            quote: '"'
+            allow_quoted_newlines: true
+      - name: raw__municipios
+        external:
+          location: "gs://meicansoft-datalake/raw/projdengue__sinan_dengue/tb_muncipio.csv"
+          options:
+            format: CSV
+            skip_leading_rows: 1
+            field_delimiter: ","
+            quote: '"'
+            allow_quoted_newlines: true
