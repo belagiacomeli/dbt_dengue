@@ -39,5 +39,7 @@ Analisar os casos de **dengue no Brasil** no período de janeiro a julho de 2025
 - Uso integrado de ferramentas modernas (**Databricks, BigQuery, DBT, Looker**).  
 - Entendimento do **fluxo de versionamento e boas práticas** em projetos de dados.  
 
+## 🔗 Link do Dashbord
+https://lookerstudio.google.com/s/nuLbiT1hRxg
 
 ✨ *Este projeto faz parte do meu portfólio de estudos em dados.* 
