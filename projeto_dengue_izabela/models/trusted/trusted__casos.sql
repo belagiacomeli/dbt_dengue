@@ -15,4 +15,4 @@ SELECT mun.ID_MUNICIPIO,
       casos.C_CLASSI_FIN,
       'projeto_dengue_maycon' as nome_projeto
 FROM {{ ref( 'staging__casos') }} casos
-INNER JOIN {{ ref('staging__municipios') }} mun ON mun.ID_MUNICIPIO = casos.ID_MUNICIP
+LEFT JOIN {{ ref('staging__municipios') }} mun ON mun.ID_MUNICIPIO = casos.ID_MUNICIP
