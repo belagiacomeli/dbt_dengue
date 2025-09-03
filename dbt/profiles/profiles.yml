@@ -4,10 +4,10 @@ meicansoft:
     prd:
       type: bigquery
       method: service-account
-      keyfile: C:\Users\izagiacomeli\projeto_dengue_izabela\meicansoft-prd-a0c7a86be733.json
+      keyfile: /Users/mfelipemota/Projects/dbt_dengue/meicansoft-prd-a0c7a86be733.json
       project: meicansoft-prd
-      schema: projeto_dengue
-      location: us-east1
+      schema: projeto_dengue_izabela
+      location: us-central1
       threads: 16
       job_execution_timeout_seconds: 300
       priority: interactive
